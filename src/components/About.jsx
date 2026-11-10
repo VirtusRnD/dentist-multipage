@@ -11,6 +11,7 @@ export default function About({
   paragraphs = [],
   imageUrl,
   reverse = false,
+  imageAlt,
 }) {
   return (
     <section id="about" className="max-w-6xl mx-auto px-6 py-24">
@@ -35,7 +36,7 @@ export default function About({
         <Reveal y={20} delay={0.1}>
           <div className={`rounded-2xl overflow-hidden aspect-[4/5] bg-brand-surface ${reverse ? 'md:[direction:ltr]' : ''}`}>
             {imageUrl && (
-              <img src={imageUrl} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+              <img src={imageUrl} alt={imageAlt ?? title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
             )}
           </div>
         </Reveal>

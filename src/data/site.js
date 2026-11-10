@@ -7,6 +7,7 @@
 const SHARED = {
   address: '210 Maple Ave, Your City',
   phone: '(555) 234-5678',
+  email: 'hello@example.com', // replace before launch: the form falls back to this address
   hours: 'Mon–Fri: 8am – 5pm, Sat: 9am – 1pm',
   ratingIcon: 'tooth',
   social: [
